@@ -4,13 +4,16 @@
 # @within function score_to_attribute:movement_speed/
 
 # ダミープレイヤーに代入
-    #declare score_holder $target
     scoreboard players operation $target ScoreToAttribute.movement_speed = @s ScoreToAttribute.movement_speed
 
-    #declare score_holder $current
-    scoreboard players set $current ScoreToAttribute.movement_speed 0
-
 # 二分探索
+    # 838.8608
+        execute store result score $current ScoreToAttribute.movement_speed run attribute @s generic.movement_speed get 100
+
+        execute if score $current ScoreToAttribute.movement_speed < $target ScoreToAttribute.movement_speed run attribute @s generic.movement_speed modifier add da139e17-c9bd-410f-8ed2-17 "ScoreToAttribute" 838.8608 add
+
+        execute if score $current ScoreToAttribute.movement_speed > $target ScoreToAttribute.movement_speed run attribute @s generic.movement_speed modifier add da139e17-c9bd-410f-8ed2-17 "ScoreToAttribute" -838.8608 add
+
     # 419.4304
         execute store result score $current ScoreToAttribute.movement_speed run attribute @s generic.movement_speed get 100
 

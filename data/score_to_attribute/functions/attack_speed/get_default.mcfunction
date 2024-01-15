@@ -3,6 +3,4 @@
 # @public
 
 #
-    tellraw @s "400"
-
     return 400

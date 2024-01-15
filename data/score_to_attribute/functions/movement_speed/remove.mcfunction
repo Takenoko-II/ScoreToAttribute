@@ -3,6 +3,9 @@
 # @within function score_to_attribute:movement_speed/
 
 # 属性削除
+    # 17
+        attribute @s generic.movement_speed modifier remove da139e17-c9bd-410f-8ed2-17
+
     # 16
         attribute @s generic.movement_speed modifier remove da139e17-c9bd-410f-8ed2-16
 

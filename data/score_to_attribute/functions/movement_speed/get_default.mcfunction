@@ -3,6 +3,4 @@
 # @public
 
 #
-    tellraw @s "10"
-
     return 10

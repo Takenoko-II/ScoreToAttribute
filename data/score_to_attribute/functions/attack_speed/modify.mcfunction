@@ -4,13 +4,16 @@
 # @within function score_to_attribute:attack_speed/
 
 # ダミープレイヤーに代入
-    #declare score_holder $target
     scoreboard players operation $target ScoreToAttribute.attack_speed = @s ScoreToAttribute.attack_speed
 
-    #declare score_holder $current
-    scoreboard players set $current ScoreToAttribute.attack_speed 0
-
 # 二分探索
+    # 838.8608
+        execute store result score $current ScoreToAttribute.attack_speed run attribute @s generic.attack_speed get 100
+
+        execute if score $current ScoreToAttribute.attack_speed < $target ScoreToAttribute.attack_speed run attribute @s generic.attack_speed modifier add da139e17-c9bd-410f-8ed2-17 "ScoreToAttribute" 838.8608 add
+
+        execute if score $current ScoreToAttribute.attack_speed > $target ScoreToAttribute.attack_speed run attribute @s generic.attack_speed modifier add da139e17-c9bd-410f-8ed2-17 "ScoreToAttribute" -838.8608 add
+
     # 419.4304
         execute store result score $current ScoreToAttribute.attack_speed run attribute @s generic.attack_speed get 100
 
