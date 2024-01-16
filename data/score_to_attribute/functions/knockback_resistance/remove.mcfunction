@@ -74,3 +74,6 @@
 
     # 00
         attribute @s generic.knockback_resistance modifier remove da139e17-c9bd-410f-8ed2-00
+
+    # 99
+        attribute @s generic.knockback_resistance modifier remove da139e17-c9bd-410f-8ed2-99

@@ -1,12 +1,14 @@
 # ScoreToAttribute
 
-ScoreToAttribute Version 1.0.1
+ScoreToAttribute Version 1.0.2
 
 プレイヤーのattributeにscoreboardの値を代入します。
 
 ## Usage
 
 scoreboardに値を設定すると、その1/100の値がattributeに反映され、scoreboardの値はリセットされます。
+
+二分探索を採用しているため、設定した値と適用される値の間に非常に小さな誤差が生じる場合があります。
 
 コマンドの実行に割り込ませたい場合は、値を設定したのち、関数 `score_to_attribute:フォルダ名/` を実行してください。
 
@@ -65,7 +67,7 @@ function score_to_attribute:attack_damage/
 
 ## License
 
-ScoreToAttribute Version 1.0.1 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
+ScoreToAttribute Version 1.0.2 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Author
 
