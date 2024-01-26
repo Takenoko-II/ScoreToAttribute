@@ -1,7 +1,6 @@
 #> score_to_attribute:armor/modify
 #
 # @internal
-# @within function score_to_attribute:armor/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.armor = @s ScoreToAttribute.armor

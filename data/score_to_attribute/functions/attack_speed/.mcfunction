@@ -1,6 +1,6 @@
 #> score_to_attribute:attack_speed/
 #
-# @within function score_to_attribute:player_tick
+# @public
 
 # remove
     function score_to_attribute:attack_speed/remove

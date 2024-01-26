@@ -1,6 +1,6 @@
 #> score_to_attribute:max_health/remove
 #
-# @within function score_to_attribute:max_health/
+# @internal
 
 # 属性削除
     # 17

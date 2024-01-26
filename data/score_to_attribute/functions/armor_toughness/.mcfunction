@@ -1,6 +1,6 @@
 #> score_to_attribute:armor_toughness/
 #
-# @within function score_to_attribute:player_tick
+# @public
 
 # remove
     function score_to_attribute:armor_toughness/remove

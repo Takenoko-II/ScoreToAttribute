@@ -1,7 +1,6 @@
 #> score_to_attribute:max_health/modify
 #
 # @internal
-# @within function score_to_attribute:max_health/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.max_health = @s ScoreToAttribute.max_health

@@ -1,7 +1,6 @@
 #> score_to_attribute:armor_toughness/modify
 #
 # @internal
-# @within function score_to_attribute:armor_toughness/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.armor_toughness = @s ScoreToAttribute.armor_toughness

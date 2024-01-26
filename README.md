@@ -1,6 +1,6 @@
 # ScoreToAttribute
 
-ScoreToAttribute Version 1.0.2
+ScoreToAttribute Version 1.0.3
 
 プレイヤーのattributeにscoreboardの値を代入します。
 
@@ -10,11 +10,11 @@ scoreboardに値を設定すると、その1/100の値がattributeに反映さ�
 
 二分探索を採用しているため、設定した値と適用される値の間に非常に小さな誤差が生じる場合があります。
 
-コマンドの実行に割り込ませたい場合は、値を設定したのち、関数 `score_to_attribute:フォルダ名/` を実行してください。
+コマンドの実行に割り込ませたい場合は、値を設定したのち、関数 `score_to_attribute:属性/` を実行してください。
 
-関数 `score_to_attribute:フォルダ名/remove` はこのデータパックによるその属性の補正値を削除します。
+関数 `#score_to_attribute:reset` はこのデータパックによる補正値を削除します。
 
-関数 `score_to_attribute:フォルダ名/get_default` はその属性の基本値のデフォルトの値を返します。
+関数 `score_to_attribute:属性/get_default` はその属性の基本値のデフォルトの値を返します。
 
 **すべて100倍の値で入力してください。**
 
@@ -65,9 +65,11 @@ function score_to_attribute:attack_damage/
 
 - コマンドマクロ機能は一切使用しておりません。
 
+- movement_speedに限り、ダッシュ時に値が変動するため調整が入っています。
+
 ## License
 
-ScoreToAttribute Version 1.0.2 is under [Mit license](https://en.wikipedia.org/wiki/MIT_License).
+ScoreToAttribute Version 1.0.3 is under the [Mit license](https://en.wikipedia.org/wiki/MIT_License).
 
 ## Author
 

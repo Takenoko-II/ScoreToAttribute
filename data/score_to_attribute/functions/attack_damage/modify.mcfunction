@@ -1,7 +1,6 @@
 #> score_to_attribute:attack_damage/modify
 #
 # @internal
-# @within function score_to_attribute:attack_damage/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.attack_damage = @s ScoreToAttribute.attack_damage

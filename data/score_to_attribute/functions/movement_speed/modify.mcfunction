@@ -1,10 +1,23 @@
 #> score_to_attribute:movement_speed/modify
 #
 # @internal
-# @within function score_to_attribute:movement_speed/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.movement_speed = @s ScoreToAttribute.movement_speed
+
+# ダッシュ状態では適切な値の計算に失敗するので1.3倍
+    # 13倍
+        execute if predicate score_to_attribute:is_sprinting run scoreboard players set $constant ScoreToAttribute.movement_speed 13
+
+        execute if predicate score_to_attribute:is_sprinting run scoreboard players operation $target ScoreToAttribute.movement_speed *= $constant ScoreToAttribute.movement_speed
+
+    # 1/10倍
+        execute if predicate score_to_attribute:is_sprinting run scoreboard players set $constant ScoreToAttribute.movement_speed 10
+
+        execute if predicate score_to_attribute:is_sprinting run scoreboard players operation $target ScoreToAttribute.movement_speed /= $constant ScoreToAttribute.movement_speed
+
+    # リセット
+        execute if predicate score_to_attribute:is_sprinting run scoreboard players reset $constant ScoreToAttribute.movement_speed
 
 # 二分探索
     # 838.8608

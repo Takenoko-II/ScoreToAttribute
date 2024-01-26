@@ -1,7 +1,6 @@
 #> score_to_attribute:luck/modify
 #
 # @internal
-# @within function score_to_attribute:luck/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.luck = @s ScoreToAttribute.luck

@@ -1,6 +1,6 @@
 #> score_to_attribute:attack_damage/remove
 #
-# @within function score_to_attribute:attack_damage/
+# @internal
 
 # 属性削除
     # 17

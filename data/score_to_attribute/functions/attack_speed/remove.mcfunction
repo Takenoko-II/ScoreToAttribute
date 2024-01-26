@@ -1,6 +1,6 @@
 #> score_to_attribute:attack_speed/remove
 #
-# @within function score_to_attribute:attack_speed/
+# @internal
 
 # 属性削除
     # 17

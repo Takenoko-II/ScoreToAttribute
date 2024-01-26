@@ -1,6 +1,6 @@
 #> score_to_attribute:luck/remove
 #
-# @within function score_to_attribute:luck/
+# @internal
 
 # 属性削除
     # 17

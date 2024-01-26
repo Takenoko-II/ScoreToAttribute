@@ -1,7 +1,6 @@
 #> score_to_attribute:knockback_resistance/modify
 #
 # @internal
-# @within function score_to_attribute:knockback_resistance/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.knockback_resistance = @s ScoreToAttribute.knockback_resistance

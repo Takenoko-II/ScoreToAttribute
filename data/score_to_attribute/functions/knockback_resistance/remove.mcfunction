@@ -1,6 +1,6 @@
 #> score_to_attribute:knockback_resistance/remove
 #
-# @within function score_to_attribute:knockback_resistance/
+# @internal
 
 # 属性削除
     # 17

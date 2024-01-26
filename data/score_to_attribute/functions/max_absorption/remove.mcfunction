@@ -1,6 +1,6 @@
 #> score_to_attribute:max_absorption/remove
 #
-# @within function score_to_attribute:max_absorption/
+# @internal
 
 # 属性削除
     # 17

@@ -1,7 +1,6 @@
 #> score_to_attribute:max_absorption/modify
 #
 # @internal
-# @within function score_to_attribute:max_absorption/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.max_absorption = @s ScoreToAttribute.max_absorption

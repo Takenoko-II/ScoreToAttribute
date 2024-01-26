@@ -1,6 +1,6 @@
 #> score_to_attribute:armor_toughness/remove
 #
-# @within function score_to_attribute:armor_toughness/
+# @internal
 
 # 属性削除
     # 17

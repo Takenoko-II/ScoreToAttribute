@@ -1,7 +1,6 @@
 #> score_to_attribute:attack_speed/modify
 #
 # @internal
-# @within function score_to_attribute:attack_speed/
 
 # ダミープレイヤーに代入
     scoreboard players operation $target ScoreToAttribute.attack_speed = @s ScoreToAttribute.attack_speed
